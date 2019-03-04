@@ -1,0 +1,44 @@
+# admin
+lsof
+git
+tmux
+rsync
+ripgrep
+fd
+htop
+ncdu
+progress
+borg
+fSArchiver
+zip
+unzip
+unrar
+ntfs-3g
+os-prober
+socat
+openbsd-netcat
+
+# langs
+python
+rustc
+nodejs
+
+# ui
+libreoffice-still-en-gb
+libreoffice-still
+gimp
+mpv
+moc
+firefox-i18n-en-us
+imagemagick
+keepassx2
+xorg
+i3
+i3blocks
+dmenu
+xorg-xinit
+ttf-hack
+termite
+feh
+comption
+xsel

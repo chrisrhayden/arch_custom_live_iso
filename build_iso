@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+if [[ ! -e /usr/share/archiso/ ]]; then
+    echo 'archiso not installed'
+    exit
+fi
+
+mkdir working_dir
+
+cp -r /usr/share/archiso/configs/releng/* working_dir/
+
+sed -e 's|^#.*||g' my_pkgs >> working_dir/packages.x86_64
+
+cp -r custom_root/* working_dir/airootfs/
+
