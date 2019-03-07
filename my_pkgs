@@ -1,8 +1,14 @@
+# included
+##########
+# rsync
+# lsscsi
+# ntfs-3g
+
 # admin
+##########
 lsof
 git
 tmux
-rsync
 ripgrep
 fd
 htop
@@ -13,17 +19,18 @@ fSArchiver
 zip
 unzip
 unrar
-ntfs-3g
 os-prober
 socat
 openbsd-netcat
 
 # langs
+##########
 python
 rustc
 nodejs
 
 # ui
+##########
 libreoffice-still-en-gb
 libreoffice-still
 gimp
