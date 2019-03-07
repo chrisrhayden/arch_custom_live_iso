@@ -15,18 +15,17 @@ htop
 ncdu
 progress
 borg
-fSArchiver
+fsarchiver
 zip
 unzip
 unrar
 os-prober
 socat
-openbsd-netcat
 
 # langs
 ##########
 python
-rustc
+rust
 nodejs
 
 # ui
@@ -47,5 +46,5 @@ xorg-xinit
 ttf-hack
 termite
 feh
-comption
+compton
 xsel

@@ -4,15 +4,13 @@
 if [[ $(id -u) != 0 ]] && [[ -z $SUDO_COMMAND ]]; then
     echo 'run with sudo'
     exit
-fi
-
-if [[ ! -e /usr/share/archiso/ ]]; then
+elif [[ ! -e /usr/share/archiso/ ]]; then
     echo 'archiso not installed'
     exit
 fi
 
 printf 'making working dir\n'
-mkdir working_dir 2>/dev/null
+mkdir -p working_dir/out 2>/dev/null
 
 cp -r /usr/share/archiso/configs/releng/* working_dir/
 
@@ -20,7 +18,7 @@ sed -e 's|^#.*||g' -e '/^$/d' my_pkgs >> working_dir/packages.x86_64
 
 cp -r custom_root/* working_dir/airootfs/
 
-printf 'building iso\n\n'
+cd working_dir || exit
 
-cd working_dir || echo 'somthings fucked'; exit
-build.sh
+printf 'building iso\n\n'
+./build.sh -v
