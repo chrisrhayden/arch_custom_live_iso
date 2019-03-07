@@ -301,4 +301,4 @@ exec --no-startup-id setxkbmap -option caps:escape
 
 ####################################################
 #       WALLPAPER
-# exec_always feh --bg-scale /home/chris/.themes/wall/wallpaper
+exec_always feh --bg-scale /home/chris/.themes/wall/wallpaper
