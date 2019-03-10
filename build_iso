@@ -18,6 +18,8 @@ sed -e 's|^#.*||g' -e '/^$/d' my_pkgs >> working_dir/packages.x86_64
 
 cp -r custom_root/* working_dir/airootfs/
 
+rm working_dir/airootfs/mnt/{usb{1,2},mis,arch_install}/remove
+
 cd working_dir || exit
 
 printf 'building iso\n\n'
